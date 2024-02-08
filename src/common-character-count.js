@@ -14,10 +14,6 @@ const { NotImplementedError } = require('../extensions/index.js');
 function getCommonCharacterCount(s1, s2) {
 const charCount1 = getCharCount(s1);
 const charCount2= getCharCount(s2);
-
-function getCharCount(str) {
-  const charCount1 = getCharCount(s1);
-  const charCount2 = getCharCount(s2);
   
   function getCharCount(str) {
     const charCount = {};
@@ -35,7 +31,6 @@ function getCharCount(str) {
     }
   }
   return count;
-}
 }
 module.exports = {
   getCommonCharacterCount
